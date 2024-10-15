@@ -1,0 +1,15 @@
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\bin\Debug\net8.0\OtusReflection.exe
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\bin\Debug\net8.0\OtusReflection.deps.json
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\bin\Debug\net8.0\OtusReflection.runtimeconfig.json
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\bin\Debug\net8.0\OtusReflection.dll
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\bin\Debug\net8.0\OtusReflection.pdb
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\obj\Debug\net8.0\OtusReflection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\obj\Debug\net8.0\OtusReflection.AssemblyInfoInputs.cache
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\obj\Debug\net8.0\OtusReflection.AssemblyInfo.cs
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\obj\Debug\net8.0\OtusReflection.csproj.CoreCompileInputs.cache
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\obj\Debug\net8.0\OtusReflection.sourcelink.json
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\obj\Debug\net8.0\OtusReflection.dll
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\obj\Debug\net8.0\refint\OtusReflection.dll
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\obj\Debug\net8.0\OtusReflection.pdb
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\obj\Debug\net8.0\OtusReflection.genruntimeconfig.cache
+C:\Users\Stanislav Lukashov\Desktop\проги\обучение\OtusReflection\OtusReflection\obj\Debug\net8.0\ref\OtusReflection.dll
