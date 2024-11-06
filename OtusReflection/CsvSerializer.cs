@@ -5,16 +5,32 @@ public class CsvSerializer
 {
     public string Serialize<T>(T obj)
     {
-        var properties = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+        if (obj is null)
+            return string.Empty;
 
         var values = new List<string>();
 
-        foreach (var prop in properties)
+        // Если объект примитивный или строка, просто возвращаем его в строке
+        if (obj.GetType().IsPrimitive || obj is string)
         {
-            var value = prop.GetValue(obj)?.ToString();
-            values.Add(value ?? string.Empty);
+            values.Add(obj.ToString());
+        }
+        else
+        {
+            var properties = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            foreach (var prop in properties)
+            {
+                //var value = prop.GetValue(obj)?.ToString();
+                //values.Add(value ?? string.Empty);
+                var value = prop.GetValue(obj);
+                var valueString = value?.ToString() ?? string.Empty;
+                values.Add($"{prop.Name} - {valueString}");
+            }
         }
 
-        return string.Join(",", values);
+        var str = string.Join(",", values);
+
+        return str;
     }
 }

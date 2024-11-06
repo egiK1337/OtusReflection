@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Diagnostics;
+using System.Text.Json;
 
 namespace OtusReflection
 {
@@ -13,7 +14,7 @@ namespace OtusReflection
 
             int iterations = 100000;
 
-            var stopwatch = System.Diagnostics.Stopwatch.StartNew();
+            var stopwatch = Stopwatch.StartNew();
 
             for (int i = 0; i < iterations; i++)
             {
@@ -25,7 +26,7 @@ namespace OtusReflection
             Console.WriteLine($"Время сериализации: {stopwatch.ElapsedMilliseconds} мс для {iterations} итераций");
 
             //Замер времени на вывод текста в консоль
-            var consoleStopwatch = System.Diagnostics.Stopwatch.StartNew();
+            var consoleStopwatch = Stopwatch.StartNew();
 
             Console.WriteLine("Пример вывода");
 
@@ -35,7 +36,7 @@ namespace OtusReflection
 
 
             //Сериализация с использованием стандартных механизмов (JSON)
-            var jsonStopwatch = System.Diagnostics.Stopwatch.StartNew();
+            var jsonStopwatch = Stopwatch.StartNew();
 
             for (int i = 0; i < iterations; i++)
             {
@@ -51,7 +52,7 @@ namespace OtusReflection
 
             // Замер времени на десериализацию
 
-            var deserializeStopwatch = System.Diagnostics.Stopwatch.StartNew();
+            var deserializeStopwatch = Stopwatch.StartNew();
 
             for (int i = 0; i < iterations; i++)
             {

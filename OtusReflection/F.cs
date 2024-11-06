@@ -14,13 +14,41 @@
     public static F Deserialize(string csv)
     {
         var values = csv.Split(',');
-        return new F
+
+        var f = new F();
+
+        foreach (var value in values)
         {
-            i1 = int.Parse(values[0]),
-            i2 = int.Parse(values[1]),
-            i3 = int.Parse(values[2]),
-            i4 = int.Parse(values[3]),
-            i5 = int.Parse(values[4])
-        };
+            var parts = value.Split(new[] { " - " }, StringSplitOptions.None);
+
+            if (parts.Length == 2)
+            {
+                var fieldName = parts[0].Trim();
+                var fieldValue = int.Parse(parts[1].Trim());
+
+                switch (fieldName)
+                {
+                    case "i1":
+                        f.i1 = fieldValue;
+                        break;
+                    case "i2":
+                        f.i2 = fieldValue;
+                        break;
+                    case "i3":
+                        f.i3 = fieldValue;
+                        break;
+                    case "i4":
+                        f.i4 = fieldValue;
+                        break;
+                    case "i5":
+                        f.i5 = fieldValue;
+                        break;
+                    default:
+                        throw new Exception($"Field name: {fieldName}");
+                }
+            }
+        }
+
+        return f;
     }
 }
